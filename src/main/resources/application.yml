@@ -6,6 +6,12 @@ spring:
     url: jdbc:mysql://127.0.0.1:3307/test
     username: root
     password: root
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
   kafka:
     bootstrap-servers: localhost:9092
     consumer:
