@@ -6,3 +6,12 @@ spring:
     url: jdbc:mysql://127.0.0.1:3307/test
     username: root
     password: root
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: doteloper
+
+
+doteloper:
+  event:
+    topic: transactional-outbox-pattern
